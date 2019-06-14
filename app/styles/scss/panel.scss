@@ -1,0 +1,104 @@
+.panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 30px 0;
+    background-color: #292A2E;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .4s;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+        max-width: 90%;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 10px 1px #E05F5B;
+    }
+}
+
+.panel-wrapper {
+    @include breakpoint(md) {
+    }
+}
+
+.panel-copy {
+    padding: 20px;
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.panel-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: right;
+
+    @include breakpoint(md) {
+        padding-top: 0;
+    }
+}
+
+.panel-category {
+    margin: 0;
+    color: #9CA3A8;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.panel-title {
+    font-size: 30px;
+    margin: 15px 0 20px;
+}
+
+.panel-review {
+    padding-bottom: 15px;
+    font-size: 12px;
+    text-align: right;
+    color: #9CA3A8;
+
+    @include breakpoint(md) {
+        padding-bottom: 0;
+    }
+}
+
+.panel-img-wrapper {
+    @include breakpoint(md) {
+        width: 150px;
+    }
+}
+
+.img-category {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+    @include breakpoint(md) {
+        width: 150px;
+        height: 100%;
+        max-width: initial;
+    }
+}
+
+.btn {
+    display: block;
+    padding: 10px;
+    margin-top: auto;
+    color: white;
+    text-align: center;
+    border: 1px solid #E05F5B;
+    border-radius: 10px;
+    background-color: #E05F5B;
+    transition: .3s;
+
+    &:hover {
+        background-color: transparent;
+        color: #E05F5B;
+    }
+}

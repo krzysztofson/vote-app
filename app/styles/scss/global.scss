@@ -1,0 +1,43 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto minmax(min-content, 1fr) auto;
+  margin: 0 auto;
+  height: 100vh;
+  color: white;
+  background-color: #191919;
+  // background: linear-gradient(135deg, rgba(71,66,83,1) 0%, rgba(43,42,57,1) 100%);
+  // background-image: url('../../bg2.jpg');
+  // background-size: cover;
+  // background-position: center center;
+}
+
+header {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+aside {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 5px 10px;
+}
+
+main {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  margin-left: 18px;
+}
+
+blockquote {
+  background-color: ghostwhite;
+  padding: 10px;
+  line-height: 1.8;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 300;
+}
